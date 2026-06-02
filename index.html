@@ -1,412 +1,595 @@
 <!doctype html>
 <html lang="ja" data-theme="paper" data-density="regular">
+
 <head>
-<meta charset="utf-8" />
-<title>濱渦ゆりの — Portfolio</title>
-<meta name="viewport" content="width=device-width,initial-scale=1" />
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700;800&family=Zen+Kaku+Gothic+New:wght@400;500;700&family=Newsreader:ital,opsz,wght@1,6..72,400;1,6..72,500&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="portfolio.css" />
+  <meta charset="utf-8" />
+  <title>濱渦ゆりの — Portfolio Magazine</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="濱渦ゆりの（YURINO HAMAUZU）のポートフォリオ。自然言語処理と言語発達の研究、生成AI・音声合成・AR・学習アプリの制作。" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700;800&family=Zen+Kaku+Gothic+New:wght@400;500;700&family=Newsreader:ital,opsz,wght@1,6..72,400;1,6..72,500&family=DM+Mono:wght@400;500&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="portfolio.css" />
 </head>
+
 <body>
-<div id="boot"><span class="kicker">YURINO HAMAUZU — PORTFOLIO</span></div>
+  <div id="boot"><span class="kicker">YURINO HAMAUZU — PORTFOLIO</span></div>
 
-<!-- ============ NAV ============ -->
-<header class="topbar">
-  <div class="wrap">
-    <a class="brand" href="#top">
-      <b>濱渦 ゆりの</b>
-      <span>Yurino Hamauzu</span>
-    </a>
-    <nav class="nav">
-      <a href="#research">研究<span class="en">Research</span></a>
-      <a href="#about">自己紹介<span class="en">About</span></a>
-      <a href="#skills">スキル<span class="en">Skills</span></a>
-      <a href="#works">作品<span class="en">Works</span></a>
-      <a href="#volunteer">活動<span class="en">Volunteer</span></a>
-      <a href="#awards">受賞<span class="en">Awards</span></a>
-      <a href="#press">掲載<span class="en">Press</span></a>
-      <a href="#contact">連絡<span class="en">Contact</span></a>
-    </nav>
-    <span class="lang-pill">JP / EN</span>
-  </div>
-</header>
-
-<!-- ============ HERO ============ -->
-<section class="hero section" id="top">
-  <div class="wrap">
-    <div class="hero-dateline">
-      <span class="kicker">Portfolio 2026</span>
-      <span class="dash"></span>
-      <span class="kicker">NLP × Human Experience</span>
+  <!-- ============ MASTHEAD ============ -->
+  <header class="masthead">
+    <div class="inner">
+      <div class="mast-meta">
+        <span>VOL.01</span><span>·</span><span>2026</span><span>·</span><span>PORTFOLIO</span>
+      </div>
+      <a class="mast-title" href="#top">
+        <div class="mast-name">YURINO ／ 濱渦 ゆりの</div>
+        <div class="mast-sub">Student Portfolio Magazine</div>
+      </a>
+      <nav class="mast-nav">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#works">Works</a>
+        <a href="#volunteer">Volunteer</a>
+        <a href="#research">Research</a>
+        <a href="#awards">Awards</a>
+        <a href="#press">Press</a>
+        <a href="#contact">Contact</a>
+      </nav>
     </div>
-    <div class="hero-grid">
-      <div class="hero-main">
-        <h1 class="hero-h1">ことばから<br />体験を<span class="em">つくる</span>。</h1>
-        <p class="hero-en">I build experiences out of language.</p>
-        <p class="hero-meta">NLP · Web Development · Human Experience</p>
-        <p class="hero-lede">香川大学大学院で、自然言語処理と言語発達を研究しています。子どもがことばを獲得していく過程に関心があり、親子会話コーパスや小規模言語モデルを用いた分析に取り組んでいます。研究で得た問いを、実際に動くプロダクトとして試すことを大切にしています。</p>
-        <div class="hero-name">
+  </header>
+
+  <!-- ============ COVER / HERO ============ -->
+  <section class="cover" id="top">
+    <div class="inner">
+      <aside class="cover-vert">FEATURE — 研究と制作、ことばをめぐる実験のすべて</aside>
+
+      <div class="cover-main">
+        <div class="cover-kicker">COVER STORY</div>
+        <h1 class="cover-h1">ことばから、<br />体験を<br /><span class="em">つくる</span>。</h1>
+        <p class="cover-meta">NLP · Web Development · Human Experience</p>
+        <p class="cover-lede">
+          香川大学大学院で、自然言語処理と言語発達を研究しています。子どもがことばを獲得していく過程に関心があり、親子会話コーパスや小規模言語モデルを用いた分析に取り組んでいます。研究で得た問いを、実際に動くプロダクトとして試すことを大切にしています。
+        </p>
+        <div class="cover-name">
           <b>濱渦 ゆりの</b>
-          <span>YURINO HAMAUZU</span>
+          <span>YURINO HAMAUZU · 2003 —</span>
         </div>
-        <p class="hero-affil">香川大学大学院 創発科学研究科 創発科学専攻 安藤研究室 / 修士1年</p>
+        <p class="cover-affil">香川大学大学院 創発科学研究科 創発科学専攻 安藤研究室 / 修士1年</p>
+        <div class="cover-cta">
+          <a class="btn primary" href="#works">Works ↓</a>
+          <a class="btn" href="#about">About →</a>
+        </div>
       </div>
-      <figure class="hero-figure">
-        <span class="hero-vert">research × making</span>
-        <image-slot id="hero-portrait" shape="rect" placeholder="顔写真 / 研究を象徴する画像（任意）"></image-slot>
-        <figcaption><span>Yurino Hamauzu</span><span>2003 —</span></figcaption>
-      </figure>
-    </div>
-  </div>
-</section>
 
-<!-- ============ RESEARCH ============ -->
-<section class="research section" id="research">
-  <div class="wrap">
-    <div class="sec-head">
-      <span class="sec-num">01</span>
-      <h2 class="sec-title">研究<small>Research — language development &amp; NLP</small></h2>
-      <span class="spacer"></span>
-      <span class="sec-note">FIT2026 Entry</span>
-    </div>
-    <div class="research-body">
-      <div>
-        <h3 class="research-theme">日本語親子会話コーパス CHILDES を用いた、<span class="em">言語モデルの言語発達過程</span>の分析</h3>
-        <p class="research-affil">香川大学大学院 創発科学研究科 安藤研究室 / 2025 — 現在</p>
-        <p class="research-summary">子どもがことばを獲得していく過程を、自然言語処理と心理言語学の観点から分析しています。現在は、日本語 CHILDES コーパスを対象に、親子会話データの整理、形態素解析、助詞や語順などの文法現象の抽出に取り組んでいます。関心があるのは、子どもがどのように語彙や文法を身につけ、誤用を経ながら表現を広げていくのかという点です。将来的には、子ども向け発話を学習した小規模言語モデルを構築し、言語モデルが人間の言語発達に近い振る舞いを示すかを検証したいと考えています。</p>
-        <span class="badge-live"><span class="dot"></span>FIT2026 エントリー中</span>
+      <div class="collage">
+        <span class="tape tape-1"></span>
+        <span class="tape tape-2"></span>
+        <span class="tape tape-3"></span>
+        <image-slot class="c-profile" id="cover-profile" shape="rect" src="image/IMG_9248_HD.png"
+          placeholder="顔写真 / 研究を象徴する画像（任意）"></image-slot>
+        <image-slot class="c-works" id="cover-works" shape="rect" src="image/jinsei-haishaku-thumbnail.png"
+          placeholder="制作物"></image-slot>
+        <image-slot class="c-vol" id="cover-vol" shape="rect" placeholder="活動の様子"></image-slot>
       </div>
-      <aside class="research-side">
-        <div class="lbl">Keywords</div>
+
+      <aside class="cover-vert r">research × making — 香川, 日本</aside>
+    </div>
+  </section>
+
+  <!-- ============ TOC / 目次 ============ -->
+  <section class="toc">
+    <div class="inner">
+      <div class="toc-head">
+        <div class="jp">目次</div>
+        <span class="en">contents</span>
+      </div>
+      <div class="toc-grid">
+        <a class="toc-item" href="#about">
+          <div class="top"><span class="en">About</span><span class="pg">P.01</span></div>
+          <div class="jp">私について</div>
+        </a>
+        <a class="toc-item" href="#skills">
+          <div class="top"><span class="en">Skills</span><span class="pg">P.02</span></div>
+          <div class="jp">できること</div>
+        </a>
+        <a class="toc-item" href="#works">
+          <div class="top"><span class="en">Works</span><span class="pg">P.03</span></div>
+          <div class="jp">つくったもの</div>
+        </a>
+        <a class="toc-item" href="#volunteer">
+          <div class="top"><span class="en">Volunteer</span><span class="pg">P.04</span></div>
+          <div class="jp">活動</div>
+        </a>
+        <a class="toc-item" href="#research">
+          <div class="top"><span class="en">Research</span><span class="pg">P.05</span></div>
+          <div class="jp">研究</div>
+        </a>
+        <a class="toc-item" href="#awards">
+          <div class="top"><span class="en">Awards</span><span class="pg">P.06</span></div>
+          <div class="jp">受賞</div>
+        </a>
+        <a class="toc-item" href="#press">
+          <div class="top"><span class="en">Press</span><span class="pg">P.07</span></div>
+          <div class="jp">掲載</div>
+        </a>
+        <a class="toc-item" href="#contact">
+          <div class="top"><span class="en">Contact</span><span class="pg">P.08</span></div>
+          <div class="jp">連絡先</div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ BENTO: ABOUT + SKILLS ============ -->
+  <section class="bento">
+    <!-- About -->
+    <div class="inner">
+      <article class="box bento-about" id="about">
+        <div class="sec-head">
+          <span class="num">01</span><span class="jp">自己紹介</span><span class="en">About</span>
+        </div>
+        <image-slot class="about-photo" id="about-portrait" shape="rect" fit="cover" src="image/IMG_9248_HD.png"
+          placeholder="プロフィール写真（横長・夕景）"></image-slot>
+        <div class="about-meta">
+          <div>
+            <div class="name">濱渦 ゆりの</div>
+            <div class="roman">HAMAUZU YURINO · b.2003</div>
+          </div>
+          <div class="tags">
+            <span class="tag accent">NLP × 言語発達</span><span class="tag">安藤研究室</span>
+          </div>
+        </div>
+        <div class="about-text">
+          <p>
+            香川大学大学院創発科学研究科で、自然言語処理と言語発達を研究しています。関心の中心は、子どもがどのようにことばを覚え、意味や文法を身につけていくのかという問いです。現在は、日本語の親子会話コーパスを対象に、形態素解析や文法現象の整理を行い、小規模言語モデルを用いた心理言語学的仮説の検証を目指しています。
+          </p>
+          <p>
+            個人制作では、生成AIと音声合成を組み合わせたチャットアプリ、小説RPG、英単語学習用タイピングゲーム、ARアプリなどを制作してきました。研究、開発、地域活動を横断しながら、ことばと体験をつなぐプロダクトを作りたいと考えています。
+          </p>
+        </div>
         <div class="tags">
-          <span class="tag accent">自然言語処理</span>
-          <span class="tag">言語発達</span>
-          <span class="tag">CHILDES</span>
-          <span class="tag">小規模言語モデル</span>
-          <span class="tag">コーパス分析</span>
-          <span class="tag">心理言語学</span>
-          <span class="tag">形態素解析</span>
+          <span class="tag">ことば</span><span class="tag">物語</span><span class="tag">学習体験</span><span
+            class="tag">UI設計</span><span class="tag">地域活動</span>
+        </div>
+      </article>
+
+      <!-- Motto quote -->
+      <aside class="box bento-quote">
+        <div class="mark">“</div>
+        <blockquote>ことばを観察し、<br />体験として実装する。</blockquote>
+        <div class="src">— Observe language, implement it as experience.</div>
+      </aside>
+
+      <!-- Numbers -->
+      <aside class="box bento-numbers">
+        <div class="lbl">Numbers</div>
+        <div class="num-grid">
+          <div>
+            <div class="n">5</div>
+            <div class="k">作品</div>
+          </div>
+          <div>
+            <div class="n">2</div>
+            <div class="k">活動</div>
+          </div>
+          <div>
+            <div class="n">7</div>
+            <div class="k">受賞</div>
+          </div>
+          <div>
+            <div class="n">4</div>
+            <div class="k">取材</div>
+          </div>
         </div>
       </aside>
-    </div>
-  </div>
-</section>
 
-<!-- ============ ABOUT ============ -->
-<section class="about section" id="about">
-  <div class="wrap">
-    <div class="sec-head">
-      <span class="sec-num">02</span>
-      <h2 class="sec-title">自己紹介<small>About — who I am</small></h2>
-    </div>
-    <div class="about-body">
-      <div class="about-lede">
-        <p>香川大学大学院 創発科学研究科で、自然言語処理と言語発達を研究しています。関心の中心は、子どもがどのようにことばを覚え、意味や文法を身につけていくのかという問いです。現在は、日本語の親子会話コーパスを対象に、形態素解析や文法現象の整理を行い、小規模言語モデルを用いた心理言語学的仮説の検証を目指しています。</p>
-        <p>個人制作では、生成AIと音声合成を組み合わせたチャットアプリ、小説RPG、英単語学習用タイピングゲーム、ARアプリなどを制作してきました。ただ機能を作るだけでなく、人がどのように読み、話し、学び、記憶するのかを考えながら設計することを意識しています。研究、開発、地域活動を横断しながら、ことばと体験をつなぐプロダクトを作りたいと考えています。</p>
-      </div>
-      <div class="about-cards">
-        <div class="pcard">
-          <div class="h"><b>好きなもの</b><span>Likes</span></div>
-          <p>ことば、物語、学習体験、UI、色、キャラクター、地域活動</p>
+      <!-- Skills -->
+      <article class="box bento-skills" id="skills">
+        <div class="sec-head">
+          <span class="num">02</span><span class="jp">スキル</span><span class="en">Skills — research, code &amp;
+            product</span>
         </div>
-        <div class="pcard">
-          <div class="h"><b>苦手なもの</b><span>Dislikes</span></div>
-          <p>目的の見えない作業、形だけの制作、読みにくいUI</p>
+        <div class="skill-grid">
+          <div class="skill-cat">
+            <div class="cat">Research</div>
+            <div class="ja">研究</div>
+            <div class="tags">
+              <span class="tag accent">自然言語処理</span><span class="tag">言語発達</span><span class="tag">コーパス分析</span><span
+                class="tag">心理言語学</span><span class="tag">小規模言語モデル</span><span class="tag">形態素解析</span>
+            </div>
+          </div>
+          <div class="skill-cat">
+            <div class="cat">Engineering</div>
+            <div class="ja">実装</div>
+            <div class="tags">
+              <span class="tag">HTML / CSS</span><span class="tag">JavaScript</span><span class="tag">Python</span><span
+                class="tag">C</span><span class="tag">Swift</span>
+            </div>
+          </div>
+          <div class="skill-cat">
+            <div class="cat">AI / Data</div>
+            <div class="ja">AI・データ</div>
+            <div class="tags">
+              <span class="tag">生成AI API</span><span class="tag">音声合成API</span><span class="tag">テキスト分類</span><span
+                class="tag">データ前処理</span><span class="tag">Jupyter Notebook</span>
+            </div>
+          </div>
+          <div class="skill-cat">
+            <div class="cat">Creative / Product</div>
+            <div class="ja">設計</div>
+            <div class="tags">
+              <span class="tag">UI設計</span><span class="tag">Webアプリ制作</span><span class="tag">ゲーム設計</span><span
+                class="tag">AR体験設計</span><span class="tag">文章体験設計</span>
+            </div>
+          </div>
+          <div class="skill-cat">
+            <div class="cat">Tools</div>
+            <div class="ja">道具</div>
+            <div class="tags">
+              <span class="tag">GitHub</span><span class="tag">Cursor</span><span class="tag">Obsidian</span><span
+                class="tag">Zotero</span><span class="tag">Figma</span><span class="tag">Xcode</span>
+            </div>
+          </div>
+          <div class="skill-cat">
+            <div class="cat">Languages</div>
+            <div class="ja">言語</div>
+            <div class="tags">
+              <span class="tag">日本語 — Native</span><span class="tag">英語 — 学習中</span><span class="tag">ドイツ語 — 初級</span>
+            </div>
+          </div>
         </div>
-        <div class="pcard">
-          <div class="h"><b>いま夢中なこと</b><span>Obsessed</span></div>
-          <p>日本語 CHILDES コーパスの整理、言語発達研究、小規模言語モデル</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============ WORKS ============ -->
+  <section class="works" id="works">
+    <div class="inner">
+      <div class="works-head">
+        <div>
+          <div class="works-title">WORKS</div>
+          <div class="works-sub">— 5 projects, 2023 → 2026 —</div>
+        </div>
+        <div class="tags">
+          <span class="tag fill">すべて</span><span class="tag ghost">Web</span><span class="tag ghost">App</span><span
+            class="tag ghost">研究に接続</span>
         </div>
       </div>
-    </div>
-    <div class="motto">
-      <blockquote>ことばを観察し、体験として実装する。</blockquote>
-      <span class="en-italic">Observe language, implement it as experience.</span>
-    </div>
-  </div>
-</section>
 
-<!-- ============ SKILLS ============ -->
-<section class="skills section" id="skills">
-  <div class="wrap">
-    <div class="sec-head">
-      <span class="sec-num">03</span>
-      <h2 class="sec-title">スキル<small>Skills — research, code &amp; product</small></h2>
-      <span class="spacer"></span>
-      <span class="sec-note">Tags &amp; Stack</span>
-    </div>
-
-    <div class="skill-row">
-      <div class="skill-cat"><b>Research</b><span>研究</span></div>
-      <div class="tags">
-        <span class="tag accent">自然言語処理</span><span class="tag">言語発達</span><span class="tag">コーパス分析</span><span class="tag">心理言語学</span><span class="tag">小規模言語モデル</span><span class="tag">形態素解析</span>
-      </div>
-    </div>
-    <div class="skill-row">
-      <div class="skill-cat"><b>Engineering</b><span>実装</span></div>
-      <div class="tags">
-        <span class="tag">HTML / CSS</span><span class="tag">JavaScript</span><span class="tag">Python</span><span class="tag">C</span><span class="tag">Swift</span>
-      </div>
-    </div>
-    <div class="skill-row">
-      <div class="skill-cat"><b>AI / Data</b><span>AI・データ</span></div>
-      <div class="tags">
-        <span class="tag">生成AI API</span><span class="tag">音声合成API</span><span class="tag">テキスト分類</span><span class="tag">データ前処理</span><span class="tag">Jupyter Notebook</span>
-      </div>
-    </div>
-    <div class="skill-row">
-      <div class="skill-cat"><b>Creative / Product</b><span>設計</span></div>
-      <div class="tags">
-        <span class="tag">UI設計</span><span class="tag">Webアプリ制作</span><span class="tag">ゲーム設計</span><span class="tag">AR体験設計</span><span class="tag">文章体験設計</span>
-      </div>
-    </div>
-    <div class="skill-row">
-      <div class="skill-cat"><b>Tools</b><span>道具</span></div>
-      <div class="tags">
-        <span class="tag">GitHub</span><span class="tag">Cursor</span><span class="tag">Obsidian</span><span class="tag">Zotero</span><span class="tag">Figma</span><span class="tag">Xcode</span>
-      </div>
-    </div>
-    <div class="skill-row">
-      <div class="skill-cat"><b>Languages</b><span>言語</span></div>
-      <div class="tags">
-        <span class="tag">日本語 — Native</span><span class="tag">英語 — 学習中</span><span class="tag">ドイツ語 — 初級</span>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ WORKS ============ -->
-<section class="works section" id="works">
-  <div class="wrap">
-    <div class="sec-head">
-      <span class="sec-num">04</span>
-      <h2 class="sec-title">開発作品<small>Works — language, learning &amp; play</small></h2>
-      <span class="spacer"></span>
-      <span class="sec-note">05 Projects · 2023 → 2026</span>
-    </div>
-
-    <div class="works-grid">
       <!-- Featured: 人生拝借 -->
-      <article class="work feature">
-        <image-slot id="work-001" shape="rect" placeholder="人生拝借 — サムネイル"></image-slot>
-        <div class="work-body">
-          <div class="work-top">
-            <span class="work-no">NO.001</span>
-            <span class="work-year">2026</span>
-          </div>
+      <article class="work-feature">
+        <image-slot id="work-001" shape="rect" fit="cover" src="image/jinsei-haishaku-thumbnail.png"
+          placeholder="人生拝借 — サムネイル"></image-slot>
+        <div class="feature-body">
+          <div class="feature-tag">★ FEATURED — NO.001 · 2026</div>
           <h3>人生拝借</h3>
-          <p class="desc">8つの人生を短時間で体験する、小説型インタラクティブRPG。4度の選択を経て、その人生を象徴する墓碑銘が残ります。</p>
+          <p class="desc">
+            8つの人生を短時間で体験する、小説型インタラクティブRPG。プレイヤーは4度の選択を行い、最後にその人生を象徴する墓碑銘が残ります。暗い背景・明朝体・紙の粒子感で、短編小説を読むような静かな体験に寄せました。
+          </p>
           <div class="tags">
-            <span class="tag accent">HTML / CSS</span><span class="tag">JavaScript</span><span class="tag ghost">小説体験</span>
+            <span class="tag accent">HTML / CSS</span><span class="tag">JavaScript</span><span
+              class="tag ghost">小説体験</span>
           </div>
-          <div class="work-foot">
-            <span class="work-link">詳細を見る →</span>
-            <span class="flag">Interactive Fiction</span>
+          <div class="actions">
+            <a class="btn primary" href="https://uzuchan.github.io/JinseiHaishaku.github.io/" target="_blank"
+              rel="noopener">プレイする →</a>
           </div>
         </div>
       </article>
 
-      <!-- 002 ずんだもんチャット -->
-      <article class="work">
-        <image-slot id="work-002" shape="rect" placeholder="ずんだもんチャット — サムネイル"></image-slot>
-        <div class="work-body">
-          <div class="work-top"><span class="work-no">NO.002</span><span class="work-year">2023</span></div>
-          <h3>ずんだもんチャット</h3>
-          <p class="desc">生成AIと音声合成APIを組み合わせ、キャラクターと会話できるWebチャットアプリ。テキストと音声で応答します。</p>
-          <div class="tags">
-            <span class="tag">JavaScript</span><span class="tag">ChatGPT API</span><span class="tag">VOICEVOX</span>
+      <!-- Remaining grid -->
+      <div class="work-grid">
+        <!-- 002 ずんだもんチャット -->
+        <article class="work-card">
+          <image-slot id="work-002" shape="rect" src="image/zundamon-chat.png"
+            placeholder="ずんだもんチャット — サムネイル"></image-slot>
+          <div class="body">
+            <span class="no">NO.002 · 2023</span>
+            <h4>ずんだもんチャット</h4>
+            <p class="desc" style="font-size:12px;line-height:1.7;color:var(--ink-soft);margin:0">
+              生成AIと音声合成APIを組み合わせ、キャラクターと会話できるWebチャットアプリ。</p>
+            <span class="stack">JavaScript / ChatGPT API / VOICEVOX</span>
           </div>
-          <div class="work-foot"><span class="work-link">詳細を見る →</span><span class="flag">生成AI</span></div>
-        </div>
-      </article>
+        </article>
 
-      <!-- 003 Sparta Typing -->
-      <article class="work">
-        <image-slot id="work-003" shape="rect" placeholder="Sparta Typing — サムネイル"></image-slot>
-        <div class="work-body">
-          <div class="work-top"><span class="work-no">NO.003</span><span class="work-year">2026</span></div>
-          <h3>Sparta Typing</h3>
-          <p class="desc">英単語を反復練習しながら覚える、習熟度管理付きのタイピング学習アプリ。CSVで単語帳を登録し、復習タイミングを記録します。</p>
-          <div class="tags">
-            <span class="tag">React</span><span class="tag">TypeScript</span><span class="tag">Vite</span><span class="tag">IndexedDB</span>
+        <!-- 003 Sparta Typing -->
+        <article class="work-card">
+          <image-slot id="work-003" shape="rect" placeholder="Sparta Typing — サムネイル（準備中）"></image-slot>
+          <div class="body">
+            <span class="no">NO.003 · 2026</span>
+            <h4>Sparta Typing</h4>
+            <p class="desc" style="font-size:12px;line-height:1.7;color:var(--ink-soft);margin:0">
+              英単語を反復練習しながら覚える、習熟度管理付きのタイピング学習アプリ。</p>
+            <span class="stack">React / TypeScript / Vite / IndexedDB</span>
           </div>
-          <div class="work-foot"><span class="work-link">詳細を見る →</span><span class="flag">学習体験</span></div>
-        </div>
-      </article>
+        </article>
 
-      <!-- 004 僕らの神ゲー -->
-      <article class="work">
-        <image-slot id="work-004" shape="rect" placeholder="飛び出す僕らの神ゲー — サムネイル"></image-slot>
-        <div class="work-body">
-          <div class="work-top"><span class="work-no">NO.004</span><span class="work-year">2024</span></div>
-          <h3>飛び出す僕らの神ゲー</h3>
-          <p class="desc">思い出のゲームパッケージをARマーカーにし、懐かしさを現実空間に立ち上げるiPhoneアプリ。表紙から3Dモデルとゲーム情報が現れます。</p>
-          <div class="tags">
-            <span class="tag">Swift</span><span class="tag">ARKit</span><span class="tag">RealityKit</span><span class="tag">Flask</span>
+        <!-- 004 飛び出す僕らの神ゲー -->
+        <article class="work-card">
+          <image-slot id="work-004" shape="rect" placeholder="飛び出す僕らの神ゲー — サムネイル（準備中）"></image-slot>
+          <div class="body">
+            <span class="no">NO.004 · 2024</span>
+            <h4>飛び出す僕らの神ゲー</h4>
+            <p class="desc" style="font-size:12px;line-height:1.7;color:var(--ink-soft);margin:0">
+              思い出のゲームパッケージをARマーカーにし、懐かしさを現実空間に立ち上げるiPhoneアプリ。</p>
+            <span class="stack">Swift / ARKit / RealityKit / Flask</span>
           </div>
-          <div class="work-foot"><span class="work-link">詳細を見る →</span><span class="flag">AR / iOS</span></div>
-        </div>
-      </article>
+        </article>
 
-      <!-- 005 Bouba-Kiki Typing -->
-      <article class="work">
-        <image-slot id="work-005" shape="rect" placeholder="Bouba-Kiki Typing — サムネイル"></image-slot>
-        <div class="work-body">
-          <div class="work-top"><span class="work-no">NO.005</span><span class="work-year">2026</span></div>
-          <h3>Bouba-Kiki Typing</h3>
-          <p class="desc">音象徴をテーマにした、言葉・図形・音を結びつける共感覚タイピングゲーム。打鍵に応じて音をその場で合成します。</p>
-          <div class="tags">
-            <span class="tag">JavaScript</span><span class="tag">Canvas</span><span class="tag">Web Audio</span>
+        <!-- 005 Bouba-Kiki Typing -->
+        <article class="work-card">
+          <image-slot id="work-005" shape="rect" src="image/bouba-kiki-typing-thumvnail.png"
+            placeholder="Bouba-Kiki Typing — サムネイル"></image-slot>
+          <div class="body">
+            <span class="no">NO.005 · 2026</span>
+            <h4>Bouba-Kiki Typing</h4>
+            <p class="desc" style="font-size:12px;line-height:1.7;color:var(--ink-soft);margin:0">
+              音象徴をテーマにした、言葉・図形・音を結びつける共感覚タイピングゲーム。</p>
+            <span class="stack">JavaScript / Canvas / Web Audio</span>
           </div>
-          <div class="work-foot"><span class="work-link">詳細を見る →</span><span class="flag">研究に接続</span></div>
-        </div>
-      </article>
+        </article>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- ============ VOLUNTEER ============ -->
-<section class="volunteer section" id="volunteer">
-  <div class="wrap">
-    <div class="sec-head">
-      <span class="sec-num">05</span>
-      <h2 class="sec-title">活動<small>Volunteer &amp; Community</small></h2>
-    </div>
+  <!-- ============ VOLUNTEER + RESEARCH ============ -->
+  <section class="vr">
+    <div class="inner">
+      <!-- Volunteer -->
+      <div id="volunteer">
+        <div class="sec-head">
+          <span class="num">04</span><span class="jp">活動</span><span class="en">Volunteer &amp; Community</span>
+        </div>
+        <div class="vol-list">
+          <div class="vol-item">
+            <div class="vol-when">2022.06<br />— 現在</div>
+            <div>
+              <h3>香川大学サイバー防犯ボランティア SETOKU</h3>
+              <p class="org">香川県警察 サイバー防犯ボランティア（委嘱4期目）</p>
+              <div class="vol-roles">
+                <span><b>隊員</b> 2022.06 –</span>
+                <span><b>浄化サブリーダー</b> 2022.10 – 2023.09</span>
+                <span><b>代表（浄化リーダー）</b> 2023.10 – 2024.09</span>
+              </div>
+              <p>
+                インターネット上の違法・有害情報の通報活動や啓発活動に取り組んできました。代表・浄化リーダーとして、活動の運営、メンバーへの共有、外部機関との連携に関わりました。技術だけでなく、情報を扱う責任や、安全なネット利用を社会に広げる重要性を学びました。
+              </p>
 
-    <div class="vol">
-      <div class="vol-head">
-        <div class="vol-when">2022.05 — 現在</div>
-        <div class="vol-roles">
-          <span class="vol-role"><b>学生代表 / 浄化リーダー</b> 2023.11–2024.11</span>
-          <span class="vol-role"><b>浄化サブリーダー</b> 2022.11–2023.11</span>
+              <div class="vol-log">
+                <div>
+                  <div class="vol-log-cat">教育活動</div>
+                  <ul>
+                    <li><span class="d">2022.09.28</span>高松市立古高松小学校での教育活動</li>
+                    <li><span class="d">2023.01.16</span>高松市立鶴尾小学校での教育活動</li>
+                    <li><span class="d">2023.09.11</span>高松市立香南小学校での教育活動</li>
+                    <li><span class="d">2023.09.15</span>高松市立東植田小学校での教育活動</li>
+                    <li><span class="d">2023.09.20</span>高松市立下笠居小学校での教育活動</li>
+                    <li><span class="d">2023.09.28</span>教育活動の総括（少年育成センターと振り返り）</li>
+                  </ul>
+                </div>
+                <div>
+                  <div class="vol-log-cat">イベント</div>
+                  <ul>
+                    <li><span class="d">2022.09.26</span>香川県警 × 香川大学 CTFコンテスト</li>
+                    <li><span class="d">2023.02.17</span>第1回 香川県警 × 香川大学 CTFコンテスト</li>
+                    <li><span class="d">2023.06.11</span>日本横断サイバーセキュリティ・グランプリ 徳島会場 準優勝</li>
+                    <li><span class="d">2023.12.17</span>第2回 香川県警 × 香川大学 CTFコンテスト</li>
+                    <li><span class="d">2024.02.13–20</span>JC3 フィッシングサイト撲滅チャレンジカップ</li>
+                  </ul>
+                </div>
+                <div>
+                  <div class="vol-log-cat">県警との連携・サポート</div>
+                  <ul>
+                    <li><span class="d">2023 / 24.04</span>多要素認証の設定サポート（計8日）</li>
+                    <li><span class="d">2023.09.21</span>「サイバー防犯かるた」お披露目会（香川県警と共同制作）</li>
+                  </ul>
+                </div>
+                <div>
+                  <div class="vol-log-cat">他団体との交流</div>
+                  <ul>
+                    <li><span class="d">2023.07.12</span>熊本 KC3・熊本県警・香川県警との意見交換会</li>
+                    <li><span class="d">2024.08.09</span>トレンドマイクロ主催／長崎県警・長崎県立大学との意見交換会</li>
+                    <li><span class="d">2024.10.08</span>金沢工業大学 情報セキュリティ・スキルアッププロジェクトとの意見交換会</li>
+                  </ul>
+                </div>
+                <div>
+                  <div class="vol-log-cat">取材</div>
+                  <ul>
+                    <li><span class="d">2023.01.16</span>RNC 西日本放送</li>
+                    <li><span class="d">2023.05.22</span>NHK</li>
+                    <li><span class="d">2024.04.26</span>四国新聞社・NHK</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="vol-item">
+            <div class="vol-when">2022.04<br />— 2024.04</div>
+            <div>
+              <h3>瀬戸内地域活性化プロジェクト 観音寺班</h3>
+              <p class="org">地域の魅力発信・イベント運営</p>
+              <div class="vol-roles">
+                <span><b>リーダー</b> 2023.04 – 2024.04</span>
+              </div>
+              <p>
+                地域の魅力発信やイベント運営に取り組みました。リーダーとして、活動内容の整理、メンバー間の調整、地域の方との関係づくりを行いました。地域活動を通して、現場の課題を聞き取り、伝わる形に整理することの大切さを学びました。
+              </p>
+              <div class="vol-links">
+                <a href="https://www.facebook.com/toyohamaeki" target="_blank" rel="noopener">Facebook ↗</a>
+                <a href="https://www.instagram.com/setp_kan_onji/" target="_blank" rel="noopener">Instagram ↗</a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
+
+      <!-- Research -->
+      <article class="research-card" id="research">
+        <div class="sec-head">
+          <span class="num">05</span><span class="jp">研究</span><span class="en">Research</span>
+        </div>
+        <h3 class="theme">日本語親子会話コーパス CHILDES を用いた、<span class="em">言語モデルの言語発達過程</span>の分析</h3>
+        <div class="affil">香川大学大学院 創発科学研究科 安藤研究室 / 2025 — 現在</div>
+        <p class="summary">
+          子どもがことばを獲得していく過程を、自然言語処理と心理言語学の観点から分析しています。現在は、日本語 CHILDES
+          コーパスを対象に、親子会話データの整理、形態素解析、助詞や語順などの文法現象の抽出に取り組んでいます。将来的には、子ども向け発話を学習した小規模言語モデルを構築し、言語モデルが人間の言語発達に近い振る舞いを示すかを検証したいと考えています。
+        </p>
+        <div class="tags">
+          <span class="tag accent">自然言語処理</span><span class="tag">言語発達</span><span class="tag">CHILDES</span><span
+            class="tag">小規模言語モデル</span><span class="tag">コーパス分析</span><span class="tag">心理言語学</span><span
+            class="tag">形態素解析</span>
+        </div>
+        <span class="badge-live"><span class="dot"></span>FIT2026 エントリー中</span>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============ AWARDS + PRESS ============ -->
+  <section class="ap">
+    <div class="inner">
+      <!-- Awards -->
+      <div id="awards">
+        <div class="sec-head">
+          <span class="num">06</span><span class="jp">資格・受賞</span><span class="en">Awards</span>
+        </div>
+        <div class="award-list">
+          <div class="award">
+            <span class="date">2023.06</span>
+            <h3>西日本横断サイバーセキュリティ・グランプリ 準優勝</h3>
+            <p>CTFコンテストにチームで出場し準優勝。限られた時間で問題を分解し、調査しながら解決する力を養いました。</p>
+            <a href="https://www.kagawa-u.ac.jp/30325/" target="_blank" rel="noopener">学内プレスリリース ↗</a>
+          </div>
+          <div class="award">
+            <span class="date">2025.04</span>
+            <h3>香川県警察 から感謝状（個人）</h3>
+            <p>サイバー防犯ボランティアの継続的なインターネット浄化・啓発活動に対して。学生代表として安全なネット利用を広げる活動に取り組みました。</p>
+            <a href="https://www.kagawa-u.ac.jp/setoku14/" target="_blank" rel="noopener">学内プレスリリース ↗</a>
+          </div>
+          <div class="award">
+            <span class="date">2025</span>
+            <h3>サイバーセキュリティに関する総務大臣奨励賞（SETOKU）</h3>
+            <p>サイバー防犯ボランティア SETOKU が、学生団体として初めてサイバーセキュリティに関する総務大臣奨励賞を受賞。学生代表として運営に携わりました。</p>
+            <a href="https://www.kagawa-u.ac.jp/setoku19/" target="_blank" rel="noopener">学内プレスリリース ↗</a>
+          </div>
+          <div class="award">
+            <span class="date">2026.03</span>
+            <h3>後援会会長賞（個人）</h3>
+            <p>創造工学部 情報システム・セキュリティコースにおいて、後援会加入者の中で成績が最も優秀な学生として表彰されました。</p>
+          </div>
+          <div class="award">
+            <span class="date">2026.03</span>
+            <h3>創造工学部特別賞（SETOKU）</h3>
+            <p>卒業式当日、SETOKU の継続的なサイバー防犯・啓発活動に対して、創造工学部特別賞が授与されました。</p>
+          </div>
+          <div class="award">
+            <span class="date">香川県知事 表彰</span>
+            <h3>青少年善行顕彰（SETOKU）</h3>
+            <p>SETOKU が青少年善行者として顕彰され、香川県知事の池田豊人氏より表彰状が授与されました。</p>
+          </div>
+          <div class="award">
+            <span class="date">香川大学</span>
+            <h3>学長賞（SETOKU・個人）</h3>
+            <p>SETOKU および個人として、香川大学 学長賞を受賞しました。</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Press -->
+      <div id="press">
+        <div class="sec-head">
+          <span class="num">07</span><span class="jp">掲載・取材</span><span class="en">Press &amp; Mentions</span>
+        </div>
+        <div class="press-list">
+          <a href="https://www.kagawa-u.ac.jp/30325/" target="_blank" rel="noopener">
+            <span class="date">2023.06.28</span>
+            <span><span class="src">学内プレスリリース</span><span class="ttl">香川大学創造工学部 学生2名が
+                西日本横断サイバーセキュリティ・グランプリで準優勝</span></span>
+            <span class="ext">↗</span>
+          </a>
+          <a href="https://www.kagawa-u.ac.jp/setoku14/" target="_blank" rel="noopener">
+            <span class="date">2025</span>
+            <span><span class="src">学内プレスリリース</span><span class="ttl">サイバー防犯ボランティア SETOKU
+                香川県警察サイバー防犯ボランティアに委嘱（4期目）</span></span>
+            <span class="ext">↗</span>
+          </a>
+          <a href="https://csc.kagawa-u.ac.jp/news/742/" target="_blank" rel="noopener">
+            <span class="date">2025</span>
+            <span><span class="src">学内ニュース</span><span class="ttl">DEF CON CTF Quals 2025 に参加</span></span>
+            <span class="ext">↗</span>
+          </a>
+          <a href="https://www.kagawa-u.ac.jp/setoku19/" target="_blank" rel="noopener">
+            <span class="date">2025</span>
+            <span><span class="src">学内プレスリリース</span><span class="ttl">サイバー防犯ボランティア SETOKU が
+                学生団体初のサイバーセキュリティに関する総務大臣奨励賞を受賞</span></span>
+            <span class="ext">↗</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="contact" id="contact">
+    <div class="inner">
       <div>
-        <h3>香川大学サイバー防犯ボランティア SETOKU</h3>
-        <p class="org">香川県警察 サイバー防犯ボランティア（委嘱4期目）</p>
-        <p>インターネット上の違法・有害情報の通報活動や啓発活動に取り組んできました。学生代表および浄化リーダーとして、活動の運営、メンバーへの共有、外部機関との連携に関わりました。技術だけでなく、情報を扱う責任や、安全なネット利用を社会に広げる重要性を学びました。</p>
+        <div class="contact-big">Contact.</div>
+        <div class="contact-note">お話しましょう。インターン・共同制作・取材、いつでも歓迎です。</div>
       </div>
-    </div>
-
-    <div class="vol">
-      <div class="vol-head">
-        <div class="vol-when">2022.04 — 2024.04</div>
-        <div class="vol-roles">
-          <span class="vol-role"><b>リーダー</b> 2023.04–2024.04</span>
+      <div class="contact-cards">
+        <div class="c-card">
+          <div class="k">Email</div>
+          <div class="v">応募フォーム経由（非公開）</div>
+        </div>
+        <a class="c-card" href="https://github.com/uzuchan" target="_blank" rel="noopener">
+          <div class="k">GitHub</div>
+          <div class="v">@uzuchan ↗</div>
+        </a>
+        <div class="c-card">
+          <div class="k">Research</div>
+          <div class="v">FIT2026 エントリー中</div>
+        </div>
+        <div class="c-card">
+          <div class="k">Based in</div>
+          <div class="v">香川, 日本</div>
         </div>
       </div>
-      <div>
-        <h3>瀬戸内地域活性化プロジェクト 観音寺班</h3>
-        <p class="org">地域の魅力発信・イベント運営</p>
-        <p>地域の魅力発信やイベント運営に取り組みました。リーダーとして、活動内容の整理、メンバー間の調整、地域の方との関係づくりを行いました。地域活動を通して、現場の課題を聞き取り、伝わる形に整理することの大切さを学びました。</p>
-        <div class="vol-links">
-          <a href="https://www.facebook.com/toyohamaeki" target="_blank" rel="noopener">Facebook ↗</a>
-          <a href="https://www.instagram.com/setp_kan_onji/" target="_blank" rel="noopener">Instagram ↗</a>
-        </div>
-      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- ============ AWARDS ============ -->
-<section class="awards-sec section" id="awards">
-  <div class="wrap">
-    <div class="sec-head">
-      <span class="sec-num">06</span>
-      <h2 class="sec-title">資格・受賞<small>Awards &amp; Honors</small></h2>
-    </div>
-    <div class="awards">
-      <div class="award">
-        <span class="date">2023.06</span>
-        <h3>西日本横断サイバーセキュリティ・グランプリ 準優勝</h3>
-        <p>CTFコンテストにチームで出場し準優勝。限られた時間で問題を分解し、調査しながら解決する力を養いました。</p>
-        <a href="https://www.kagawa-u.ac.jp/30325/" target="_blank" rel="noopener">学内プレスリリース ↗</a>
-      </div>
-      <div class="award">
-        <span class="date">2025.04</span>
-        <h3>香川県警察 から感謝状（個人）</h3>
-        <p>サイバー防犯ボランティアの継続的なインターネット浄化・啓発活動に対して。学生代表として安全なネット利用を広げる活動に取り組みました。</p>
-        <a href="https://www.kagawa-u.ac.jp/setoku14/" target="_blank" rel="noopener">学内プレスリリース ↗</a>
-      </div>
-      <div class="award">
-        <span class="date">2026.03</span>
-        <h3>後援会会長賞（個人）</h3>
-        <p>創造工学部 情報システム・セキュリティコースにおいて、後援会加入者の中で成績が最も優秀な学生として表彰されました。</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ PRESS ============ -->
-<section class="press-sec section" id="press">
-  <div class="wrap">
-    <div class="sec-head">
-      <span class="sec-num">07</span>
-      <h2 class="sec-title">掲載・取材<small>Press &amp; Mentions</small></h2>
-      <span class="spacer"></span>
-      <span class="sec-note">External Links</span>
-    </div>
-    <div class="press">
-      <a href="https://www.kagawa-u.ac.jp/30325/" target="_blank" rel="noopener">
-        <span class="date">2023.06.28</span>
-        <span><span class="src">学内プレスリリース</span><span class="ttl">香川大学創造工学部 学生2名が 西日本横断サイバーセキュリティ・グランプリで準優勝</span></span>
-        <span class="ext">↗</span>
-      </a>
-      <a href="https://www.kagawa-u.ac.jp/setoku14/" target="_blank" rel="noopener">
-        <span class="date">2025</span>
-        <span><span class="src">学内プレスリリース</span><span class="ttl">サイバー防犯ボランティア SETOKU 香川県警察サイバー防犯ボランティアに委嘱（4期目）</span></span>
-        <span class="ext">↗</span>
-      </a>
-      <a href="https://csc.kagawa-u.ac.jp/news/742/" target="_blank" rel="noopener">
-        <span class="date">2025</span>
-        <span><span class="src">学内ニュース</span><span class="ttl">DEF CON CTF Quals 2025 に参加</span></span>
-        <span class="ext">↗</span>
-      </a>
-    </div>
-  </div>
-</section>
-
-<!-- ============ CONTACT ============ -->
-<section class="contact" id="contact">
-  <div class="section"><div class="wrap">
-    <div class="contact-grid">
-      <div>
-        <h2>お話<br />しましょう。</h2>
-        <span class="en-italic">Let's get in touch — open to internships &amp; collaboration.</span>
-      </div>
-      <div class="contact-list">
-        <div class="row"><span class="k">Email</span><span class="v">応募フォーム経由（非公開）</span></div>
-        <div class="row"><span class="k">GitHub</span><span class="v">準備中</span></div>
-        <div class="row"><span class="k">Research</span><span class="v">FIT2026 エントリー中</span></div>
-        <div class="row"><span class="k">Based in</span><span class="v">香川, 日本</span></div>
-      </div>
-    </div>
-    <div class="colophon">
-      <span>© 2026 Yurino Hamauzu</span>
+  <!-- ============ FOOTER ============ -->
+  <footer class="mag-footer">
+    <div class="inner">
+      <span>Yurino Hamauzu — Portfolio Magazine · Vol.01</span>
       <span>ことばから体験をつくる</span>
-      <span>Last updated 2026.05</span>
+      <span>© 2026 · Last updated 2026.06</span>
     </div>
-  </div></div>
-</section>
+  </footer>
 
-<!-- tweaks island -->
-<div id="tweaks-root"></div>
+  <!-- tweaks island -->
+  <div id="tweaks-root"></div>
 
-<script src="image-slot.js"></script>
-<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
-<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
-<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
-<script type="text/babel" src="tweaks-panel.jsx"></script>
-<script type="text/babel" src="portfolio-tweaks.jsx"></script>
+  <script src="image-slot.js"></script>
+  <script src="https://unpkg.com/react@18.3.1/umd/react.development.js"
+    integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L"
+    crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js"
+    integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm"
+    crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js"
+    integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y"
+    crossorigin="anonymous"></script>
+  <script type="text/babel" src="tweaks-panel.jsx"></script>
+  <script type="text/babel" src="portfolio-tweaks.jsx"></script>
 
-<script>
-  // reveal once fonts settle
-  (document.fonts ? document.fonts.ready : Promise.resolve()).then(() => {
-    requestAnimationFrame(() => document.getElementById('boot').classList.add('gone'));
-  });
-  setTimeout(() => document.getElementById('boot').classList.add('gone'), 1200);
-</script>
+  <script>
+    // reveal once fonts settle
+    (document.fonts ? document.fonts.ready : Promise.resolve()).then(() => {
+      requestAnimationFrame(() => document.getElementById('boot').classList.add('gone'));
+    });
+    setTimeout(() => document.getElementById('boot').classList.add('gone'), 1200);
+  </script>
 </body>
+
 </html>

@@ -99,9 +99,10 @@ img{max-width:100%;display:block}
 
 /* decorative tape strip */
 .tape{
-  position:absolute;width:84px;height:20px;z-index:3;
+  position:absolute;width:clamp(58px,28%,92px);height:20px;z-index:4;
   background:color-mix(in srgb,var(--accent) 30%,transparent);
   border:1px dashed rgba(0,0,0,.18);box-shadow:0 1px 2px rgba(0,0,0,.06);
+  pointer-events:none;
 }
 
 /* image slot styling */
@@ -168,20 +169,25 @@ image-slot{
 .cover-cta{display:flex;gap:10px;margin-top:26px;flex-wrap:wrap}
 
 .collage{position:relative;min-height:clamp(380px,44vw,560px)}
-.collage image-slot{position:absolute;border:2px solid var(--ink);box-shadow:4px 4px 0 var(--ink)}
+.collage .photo{position:absolute}
+.collage .photo image-slot{
+  width:100%;height:100%;
+  border:2px solid var(--ink);box-shadow:4px 4px 0 var(--ink);
+}
 .collage .c-profile{width:62%;aspect-ratio:3/4;right:4%;top:2%;transform:rotate(2deg)}
 .collage .c-works{width:46%;aspect-ratio:1/1;left:0;top:44%;transform:rotate(-3deg)}
 .collage .c-vol{width:52%;aspect-ratio:3/2;right:0;bottom:0;transform:rotate(3deg)}
-.collage .tape-1{left:14%;top:1%;transform:rotate(-5deg)}
-.collage .tape-2{left:2%;top:42%;transform:rotate(3deg)}
-.collage .tape-3{right:24%;bottom:24%;transform:rotate(-3deg)}
+.collage .tape-1{left:50%;top:-11px;transform:translateX(-50%) rotate(-5deg)}
+.collage .tape-2{left:14%;top:-10px;transform:rotate(4deg)}
+.collage .tape-3{right:12%;top:-10px;transform:rotate(-4deg)}
 @media(max-width:860px){
   .cover .inner{grid-template-columns:1fr;gap:30px}
   .cover-vert{display:none}
   .collage{min-height:0;display:grid;grid-template-columns:1fr 1fr;gap:14px}
-  .collage image-slot{position:static;width:auto;transform:none;box-shadow:3px 3px 0 var(--ink)}
+  .collage .photo{position:relative;width:auto;transform:none}
+  .collage .photo image-slot{box-shadow:3px 3px 0 var(--ink)}
   .collage .c-profile{grid-column:1 / -1;aspect-ratio:16/10}
-  .collage .tape{display:none}
+  .collage .tape{display:block;width:clamp(58px,22%,84px);height:18px;top:-9px}
 }
 
 /* ============ TOC / 目次 ============ */

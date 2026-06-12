@@ -272,6 +272,87 @@ image-slot{
 @media(max-width:900px){.work-feature{grid-template-columns:1fr}.work-feature image-slot{aspect-ratio:2342/1796;height:auto;min-height:0}.work-grid{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:480px){.work-grid{grid-template-columns:1fr}}
 
+/* ===== vibe coding sprint ===== */
+.vibe{
+  position:relative;
+  margin-top:clamp(26px,4vw,44px);
+  border:2px solid var(--accent);
+  background:color-mix(in srgb,var(--accent) 4%,var(--surface));
+  box-shadow:6px 6px 0 color-mix(in srgb,var(--accent) 30%,transparent);
+  padding:clamp(26px,3.6vw,44px) clamp(18px,3.2vw,40px) clamp(20px,3.2vw,40px);
+}
+.vibe-kicker{
+  position:absolute;top:0;left:clamp(16px,3vw,32px);transform:translateY(-50%);
+  max-width:calc(100% - 2*clamp(16px,3vw,32px));
+  display:inline-block;
+  font-family:var(--mono);font-weight:500;font-size:11px;letter-spacing:.26em;
+  text-transform:uppercase;line-height:1.8;
+  color:var(--surface);background:var(--accent);
+  padding:4px 12px;
+}
+.vibe-head{
+  border-bottom:1px solid var(--rule-strong);
+  padding-bottom:clamp(18px,2.6vw,26px);
+  margin-bottom:clamp(18px,2.8vw,28px);
+}
+.vibe-title{
+  font-family:var(--serif);font-weight:800;
+  font-size:clamp(26px,3.8vw,44px);line-height:1.18;letter-spacing:.01em;
+  margin:0;text-wrap:balance;
+}
+.vibe-lede{font-size:14px;line-height:1.9;color:var(--ink-soft);margin:14px 0 0;max-width:64ch}
+.vibe-stats{
+  display:flex;flex-wrap:wrap;gap:clamp(18px,3.4vw,44px);
+  margin-top:clamp(18px,2.6vw,26px);
+  border-top:1px dashed var(--rule-strong);
+  padding-top:clamp(14px,2vw,20px);
+}
+.vibe-stats .vs{border-left:2px solid var(--accent);padding-left:12px}
+.vibe-stats .n{display:block;font-family:var(--mono);font-weight:500;font-size:clamp(26px,3.4vw,38px);line-height:1;color:var(--ink)}
+.vibe-stats .k{display:block;font-size:11px;color:var(--ink-soft);margin-top:6px}
+.vibe-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(14px,1.8vw,20px)}
+.vibe-grid .work-card .desc{font-size:12px;line-height:1.7;color:var(--ink-soft);margin:0}
+.vibe-grid .work-card:hover{box-shadow:5px 5px 0 var(--accent)}
+@media(max-width:900px){.vibe-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:480px){
+  .vibe-grid{grid-template-columns:1fr}
+  .vibe-kicker{font-size:9.5px;letter-spacing:.16em}
+}
+
+/* ============ WORK DETAIL ============ */
+.detail-page{border-top:2px solid var(--ink)}
+.detail-hero .inner{
+  display:grid;grid-template-columns:minmax(0,.9fr) minmax(320px,1.1fr);
+  gap:clamp(24px,5vw,56px);align-items:center;
+  padding-block:clamp(42px,7vw,84px);
+}
+.detail-copy h1{
+  font-family:var(--serif);font-weight:800;font-size:clamp(48px,8vw,96px);
+  line-height:.9;margin:16px 0 0;
+}
+.detail-lede{font-size:calc(17px*var(--type-scale));line-height:1.9;margin:24px 0;color:var(--ink)}
+.detail-visual{position:relative;transform:rotate(1.5deg)}
+.detail-visual image-slot{
+  width:100%;aspect-ratio:16/10;border:2px solid var(--ink);
+  box-shadow:6px 6px 0 var(--ink);background:var(--surface);
+}
+.detail-visual .tape{left:50%;top:-11px;transform:translateX(-50%) rotate(-4deg)}
+.detail-body{border-top:2px solid var(--ink);background:color-mix(in srgb,var(--ink) 3%,transparent)}
+.detail-body .inner{padding-block:var(--sec-pad)}
+.detail-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.detail-panel{
+  background:var(--surface);border:2px solid var(--ink);padding:clamp(20px,3vw,30px);
+  box-shadow:4px 4px 0 var(--ink);
+}
+.detail-panel.wide{grid-column:1 / -1}
+.detail-panel p{font-size:14px;line-height:1.95;margin:0;color:var(--ink)}
+.detail-panel p + p{margin-top:14px}
+.detail-list{margin:0;padding-left:1.2em;color:var(--ink);font-size:14px;line-height:1.9}
+@media(max-width:860px){
+  .detail-hero .inner,.detail-grid{grid-template-columns:1fr}
+  .detail-visual{transform:none}
+}
+
 /* ============ VOLUNTEER + RESEARCH ============ */
 .vr{border-top:2px solid var(--ink)}
 .vr .inner{display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(28px,4vw,52px);padding-block:var(--sec-pad)}

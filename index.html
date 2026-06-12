@@ -5,7 +5,7 @@
   <meta charset="utf-8" />
   <title>濱渦ゆりの — Portfolio Magazine</title>
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="description" content="濱渦ゆりの（YURINO HAMAUZU）のポートフォリオ。自然言語処理と言語発達の研究、生成AI・音声合成・AR・学習アプリの制作。" />
+  <meta name="description" content="濱渦ゆりの（YURINO HAMAUZU）のポートフォリオ。自然言語処理と言語発達の研究、生成AI・音声合成・AR・学習アプリの制作。AIエージェントを並列に使うバイブコーディングによる高速プロトタイピングも実践。" />
   <meta name="theme-color" content="#f6f0e6" />
   <link rel="icon" href="image/favicon/favicon.svg" type="image/svg+xml" />
   <link rel="icon" href="image/favicon/favicon.ico" sizes="any" />
@@ -158,12 +158,13 @@
             香川大学大学院創発科学研究科で、自然言語処理と言語発達を研究しています。関心の中心は、子どもがどのようにことばを覚え、意味や文法を身につけていくのかという問いです。現在は、日本語の親子会話コーパスを対象に、形態素解析や文法現象の整理を行い、小規模言語モデルを用いた心理言語学的仮説の検証を目指しています。
           </p>
           <p>
-            個人制作では、生成AIと音声合成を組み合わせたチャットアプリ、小説RPG、英単語学習用タイピングゲーム、ARアプリなどを制作してきました。研究、開発、地域活動を横断しながら、ことばと体験をつなぐプロダクトを作りたいと考えています。
+            個人制作では、生成AIと音声合成を組み合わせたチャットアプリ、小説RPG、英単語学習用タイピングゲーム、ARアプリなどを制作してきました。SETOKU
+            でのサポート活動や他団体との交流を通して、海外の研究者や開発者とも話せる力を伸ばしたいと感じています。研究、開発、地域活動を横断しながら、ことばと体験をつなぐプロダクトを作りたいと考えています。
           </p>
         </div>
         <div class="tags">
           <span class="tag">ことば</span><span class="tag">物語</span><span class="tag">学習体験</span><span
-            class="tag">UI設計</span><span class="tag">地域活動</span>
+            class="tag">UI設計</span><span class="tag">地域活動</span><span class="tag">国際交流</span>
         </div>
         <div class="about-extra">
           <div class="ax"><span class="axk">好きなもの</span><span class="axv">ものづくり / 多言語学習 / デザイン / スポーツ /
@@ -187,7 +188,7 @@
         <div class="lbl">Numbers</div>
         <div class="num-grid">
           <div>
-            <div class="n">5</div>
+            <div class="n">8</div>
             <div class="k">作品</div>
           </div>
           <div>
@@ -257,7 +258,7 @@
             <div class="cat">Languages</div>
             <div class="ja">言語</div>
             <div class="tags">
-              <span class="tag">日本語 — Native</span><span class="tag">英語 — 学習中</span><span class="tag">ドイツ語 —
+              <span class="tag">日本語 — Native</span><span class="tag">英語 — 国際交流に向けて学習中</span><span class="tag">ドイツ語 —
                 初級</span><span class="tag">フランス語 — 入門</span><span class="tag">スペイン語 — 入門</span><span class="tag">韓国語 —
                 入門</span>
             </div>
@@ -273,7 +274,7 @@
       <div class="works-head">
         <div>
           <div class="works-title">WORKS</div>
-          <div class="works-sub">— 5 projects, 2023 → 2026 —</div>
+          <div class="works-sub">— 8 projects, 2023 → 2026 —</div>
         </div>
         <div class="tags">
           <span class="tag fill">すべて</span><span class="tag ghost">Web</span><span class="tag ghost">App</span><span
@@ -318,17 +319,16 @@
         </article>
 
         <!-- 003 Sparta Typing -->
-        <a class="work-card" href="https://uzuchan.github.io/Sparta-Typing.github.io/" target="_blank"
-          rel="noopener">
+        <a class="work-card" href="sparta-typing.html">
           <image-slot id="work-003" shape="rect" src="image/uzuchan.github.io_Sparta-Typing.github.io_.png"
             placeholder="Sparta Typing — サムネイル"></image-slot>
           <div class="body">
             <span class="no">NO.003 · 2026</span>
             <h4>Sparta Typing</h4>
             <p class="desc" style="font-size:12px;line-height:1.7;color:var(--ink-soft);margin:0">
-              英単語を反復練習しながら覚える、習熟度管理付きのタイピング学習アプリ。</p>
+              海外渡航や国際学会での発表、海外の人との交流を目指して制作した英単語タイピング学習アプリ。反復練習と習熟度管理で、英語学習を毎日続けやすくしました。</p>
             <span class="stack">React / TypeScript / Vite / IndexedDB</span>
-            <span class="card-link">プレイする ↗</span>
+            <span class="card-link">詳しく見る →</span>
           </div>
         </a>
 
@@ -357,6 +357,65 @@
             <span class="stack">JavaScript / Canvas / Web Audio</span>
           </div>
         </a>
+      </div>
+
+      <!-- Special feature: VIBE CODING SPRINT -->
+      <div class="vibe" id="vibe">
+        <div class="vibe-head">
+          <div class="vibe-kicker">SPECIAL FEATURE — VIBE CODING SPRINT</div>
+          <h3 class="vibe-title">半日で、<span class="em">動くもの</span>まで。</h3>
+          <p class="vibe-lede">
+            CLAUDE.mdに仕様を書き、Claude Codeのエージェント約10体を並列に動かすバイブコーディング。アイデア出しから実装までを半日単位で回す制作スタイルです。1日で約20案を、動く叩き台まで起こしました。
+          </p>
+          <div class="vibe-stats">
+            <div class="vs"><span class="n">0.5</span><span class="k">日／作品</span></div>
+            <div class="vs"><span class="n">約20</span><span class="k">案／日</span></div>
+            <div class="vs"><span class="n">10</span><span class="k">エージェント並列</span></div>
+          </div>
+        </div>
+        <div class="vibe-grid">
+          <!-- 006 hikari -->
+          <a class="work-card" href="works/hikari/index.html" target="_blank" rel="noopener">
+            <image-slot id="work-006" shape="rect" src="image/hikari-home.png"
+              placeholder="hikari — サムネイル"></image-slot>
+            <div class="body">
+              <span class="no">NO.006 · 2026 — 約20案 / 1日</span>
+              <h4>hikari — インタラクティブ試作スタジオ</h4>
+              <p class="desc">
+                「暗闇に光を灯す」ブラウザ完結のインタラクティブ試作集。複数エージェント並列の量産スプリントで、1日約20案を19本の動くデモに。各試作に試作技術（Canvas/Three.js）と本実装技術（Unity等）の二層タグを添える設計。</p>
+              <span class="stack">JavaScript / Canvas / Three.js / Web Audio</span>
+              <span class="card-link">試作集を見る →</span>
+            </div>
+          </a>
+
+          <!-- 007 NEXUS -->
+          <a class="work-card" href="works/nexus/index.html" target="_blank" rel="noopener">
+            <image-slot id="work-007" shape="rect" src="image/nexus-hero.png"
+              placeholder="NEXUS — サムネイル"></image-slot>
+            <div class="body">
+              <span class="no">NO.007 · 2026 — built in half a day</span>
+              <h4>NEXUS</h4>
+              <p class="desc">
+                GPUパーティクル数万点とbloom、スクロール連動カメラで「次世代デジタル宇宙」を描く没入型SFサイト。CLAUDE.mdに仕様と契約を定義し、役割分担した10体のAIエージェントを並列稼働させるバイブコーディングで半日で完成。</p>
+              <span class="stack">Three.js / WebGL (GLSL) / Vite / Claude Code ×10 agents</span>
+              <span class="card-link">体験する →</span>
+            </div>
+          </a>
+
+          <!-- 008 カンペ -->
+          <a class="work-card" href="works/kanpe.html" target="_blank" rel="noopener">
+            <image-slot id="work-008" shape="rect" src="image/kanpe-main.png"
+              placeholder="カンペ — サムネイル"></image-slot>
+            <div class="body">
+              <span class="no">NO.008 · 2026 — built in half a day</span>
+              <h4>カンペ</h4>
+              <p class="desc">
+                自分の発表用に半日でサッと作ったWebカンペ（テレプロンプター）。原稿をゆっくり自動スクロールし、読み上げ位置マーカーと残り時間表示で進行を補助。持ち時間を入れれば読み切る速度に自動調整。</p>
+              <span class="stack">Vanilla JS / 単一HTML</span>
+              <span class="card-link">使ってみる →</span>
+            </div>
+          </a>
+        </div>
       </div>
     </div>
   </section>
@@ -518,6 +577,7 @@
             <span class="date">香川県知事 表彰</span>
             <h3>青少年善行顕彰（SETOKU）</h3>
             <p>SETOKU が青少年善行者として顕彰され、香川県知事の池田豊人氏より表彰状が授与されました。</p>
+            <a href="https://csc.kagawa-u.ac.jp/news/919/" target="_blank" rel="noopener">学内ニュース ↗</a>
           </div>
           <div class="award">
             <span class="date">香川大学</span>
